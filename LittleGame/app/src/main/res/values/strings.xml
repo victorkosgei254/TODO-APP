@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LittleGame</string>
+    <string name="name">Victor K Kosgei</string>
+    <string name="yellow_start">Yellow Star</string>
 </resources>
