@@ -16,12 +16,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setListeners() {
-        val clickable:List<View> = listOf(box_one_text,box_two_text,box_five_text,box_three_text,box_four_text,mi_layout)
-        val colors:List<String> = listOf("#FF5733","#213A58","#E10BEF","#0BBFEF","#CBB017")
+        val clickable:List<View> = listOf(box_one_text,box_two_text,box_five_text,box_three_text,box_four_text,mi_layout,toggle_btn)
+        val colors:List<String> = listOf("#FF5733","#213A58","#E10BEF","#0BBFEF","#CBB017","#B817CB","#2ABF38")
         for (item in clickable)
         {
             item.setOnClickListener{
                 it.setBackgroundColor(Color.parseColor(colors.random()))
+            }
+        }
+
+        toggle_btn.setOnClickListener {
+            for (item in clickable){
+                item.setBackgroundColor(Color.parseColor(colors.random()))
             }
         }
     }
