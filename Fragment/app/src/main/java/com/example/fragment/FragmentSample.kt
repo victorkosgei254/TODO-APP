@@ -11,14 +11,19 @@ import android.widget.TextView
 /**
  * A simple [Fragment] subclass.
  */
-class TitleFragment : Fragment() {
+class FragmentSample : Fragment() {
 
+//
+companion object{
+    fun newInstatnce() = FragmentSample()
+}
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        return inflater.inflate(R.layout.first_fragment,container,false)
     }
+
 
 
 }
