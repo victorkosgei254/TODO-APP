@@ -13,4 +13,10 @@
         android:title="@string/secondFragmentText"
         android:icon="@drawable/two"
         />
+
+    <item
+        android:id="@+id/third_fragment"
+        android:title="@string/thirdFragmentText"
+        android:icon="@drawable/two"
+        />
 </menu>

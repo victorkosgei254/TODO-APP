@@ -8,4 +8,7 @@
     <string name="btn_frag_2">Done Again</string>
     <string name="firstFragmentText">View First Fragment</string>
     <string name="secondFragmentText">View Second Fragment</string>
+    <string name="banner_text">You are Amaizing Victor !!</string>
+    <string name="image_description">Just and image</string>
+    <string name="thirdFragmentText">View Third Fragment</string>
 </resources>
