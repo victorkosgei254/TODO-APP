@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearningRetrofit</string>
+    <string name="connection_error_text">Connetion Error !!</string>
 </resources>
