@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecyclerExample</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="my_address">My Address</string>
 </resources>
