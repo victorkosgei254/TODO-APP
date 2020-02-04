@@ -4,27 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:background="@drawable/third_fragment_background"
+    android:orientation="vertical"
+    android:padding="@dimen/linearContainerPadding">
 
-    <ImageView
-        android:id="@+id/profile"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/linearContainerPadding">
 
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="User Name"
-        android:textSize="@dimen/fontSize" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            tools:srcCompat="@tools:sample/avatars"
+            app:civ_border_color="#FF000000"
+            />
 
-    <TextView
-        android:id="@+id/contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="User Contact"
-        android:textSize="@dimen/smallFont" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/linearContainerPadding">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="User Name"
+                android:textSize="@dimen/fontSize" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="User Contact"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>
