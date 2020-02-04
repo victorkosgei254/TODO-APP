@@ -1,33 +1,34 @@
 package com.example.recyclerexample
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerexample.adapters.BlogRecyclerAdapter
+import com.example.recyclerexample.data.DataSource
+import com.example.recyclerexample.ui.TopSpacingDecoration
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var blogAdapter : BlogRecyclerAdapter
 
-    @SuppressLint("WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initRecylerView()
+        addDataSet()
+    }
 
-//        adding recycler view to the project
-        val recyclerView = findViewById(R.id.recyclerView) as RecyclerView
-        recyclerView.layoutManager = LinearLayoutManager(this,LinearLayout.VERTICAL,false)
+    private fun addDataSet(){
+        val data= DataSource.createDataSet()
+        blogAdapter.submitList(data)
+    }
 
-        val users = listOf(
-            User(name = "Victor Ben",address = "134-Baltimore"),
-            User(name = "Victor Kosgei",address = "134-Baltimore"),
-            User(name = "Victor Kipruto",address = "134-Baltimore"),
-            User(name = "Victor Michael",address = "134-Baltimore"),
-            User(name = "Victor Josephs",address = "134-Baltimore")
-        )
-
-        val adapter = CustomAdapter(users)
-        recyclerView.adapter=adapter
-
+    private fun initRecylerView(){
+        recyclerView.apply {
+            layoutManager=LinearLayoutManager(this@MainActivity)
+            addItemDecoration(TopSpacingDecoration(30))
+            blogAdapter = BlogRecyclerAdapter()
+            adapter=blogAdapter
+        }
     }
 }
