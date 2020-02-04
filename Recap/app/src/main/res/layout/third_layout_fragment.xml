@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/third_fragment_background"
+    android:orientation="vertical"
+    android:padding="@dimen/linearContainerPadding">
+
+    <TextView
+        android:id="@+id/dummy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/third_frag_dummy_text"
+        android:textSize="@dimen/smallFont"
+        android:textAlignment="textStart"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_one_background_color"
+        android:text="@string/third_btn" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="fragment_one_background_color">#f2b305</drawable>
+    <drawable name="fragment_two_background">#6f51c9</drawable>
+    <drawable name="third_fragment_background">#dfe7ed</drawable>
+</resources>

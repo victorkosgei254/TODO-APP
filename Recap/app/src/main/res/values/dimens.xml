@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontSize">19sp</dimen>
+    <dimen name="smallFont">16sp</dimen>
+    <dimen name="linearContainerPadding">5dp</dimen>
+</resources>
