@@ -29,3 +29,4 @@ class CustomAdapter(val userList :List<User>):RecyclerView.Adapter<CustomAdapter
         holder.textViewAddress.text = user.address
         }
 }
+

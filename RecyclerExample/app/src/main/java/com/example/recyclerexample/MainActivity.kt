@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this,LinearLayout.VERTICAL,false)
 
-        val users = listOf<User>(
-            User(name = "Victor",address = "134-Baltimore"),
-            User(name = "Victor",address = "134-Baltimore"),
-            User(name = "Victor",address = "134-Baltimore"),
-            User(name = "Victor",address = "134-Baltimore"),
-            User(name = "Victor",address = "134-Baltimore")
+        val users = listOf(
+            User(name = "Victor Ben",address = "134-Baltimore"),
+            User(name = "Victor Kosgei",address = "134-Baltimore"),
+            User(name = "Victor Kipruto",address = "134-Baltimore"),
+            User(name = "Victor Michael",address = "134-Baltimore"),
+            User(name = "Victor Josephs",address = "134-Baltimore")
         )
 
         val adapter = CustomAdapter(users)
