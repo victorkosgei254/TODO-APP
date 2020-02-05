@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="note_hint">Add New Note</string>
+    <string name="new_note_title">Add Title ?</string>
 </resources>
