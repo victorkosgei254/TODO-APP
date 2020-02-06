@@ -61,6 +61,8 @@ class AddNoteFragment : Fragment() {
             }
 
         }
+
+        SaveNote().execute()
     }
 
 }
